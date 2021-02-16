@@ -4,7 +4,7 @@ pipeline {
     stage('HolaMundo') {
       steps {
         echo 'holamundo'
-        sh 'printenv'
+        sh 'echo $PATH$'
       }
     }
 
