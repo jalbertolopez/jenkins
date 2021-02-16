@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo 'holamundo'
         writeFile(file: 'archivo.txt', text: 'hola mundo')
+        sh 'HOLA $JENKINS_HOLA'
       }
     }
 
