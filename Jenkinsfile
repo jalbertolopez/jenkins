@@ -16,6 +16,12 @@ pipeline {
       }
     }
 
+    stage('Despedida') {
+      steps {
+        input(message: 'Lastima que termino', ok: 'Excelente taller')
+      }
+    }
+
   }
   environment {
     JENKINS_HOLA = 'josealbertolopez2'
