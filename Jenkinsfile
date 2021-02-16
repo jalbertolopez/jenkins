@@ -6,6 +6,7 @@ pipeline {
         echo 'holamundo'
         writeFile(file: 'archivo.txt', text: 'hola mundo')
         bat 'echo %JENKINS_HOLA%'
+        bat 'echo %PATH%'
       }
     }
 
