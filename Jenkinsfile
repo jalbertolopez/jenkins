@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'holamundo'
         writeFile(file: 'archivo.txt', text: 'hola mundo')
-        powershell 'echo %JAVA_HOME%'
+        powershell 'echo %JENKINS_HOLA%'
       }
     }
 
