@@ -4,7 +4,7 @@ pipeline {
     stage('HolaMundo') {
       steps {
         echo 'holamundo'
-        sh 'echo $PATH$'
+        writeFile(file: 'archivo.txt', text: 'hola mundo')
       }
     }
 
