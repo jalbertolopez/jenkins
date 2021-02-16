@@ -15,4 +15,7 @@ pipeline {
     }
 
   }
+  environment {
+    JENKINS_HOLA = 'josealbertolopez2'
+  }
 }
