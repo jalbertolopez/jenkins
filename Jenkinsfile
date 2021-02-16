@@ -8,5 +8,11 @@ pipeline {
       }
     }
 
+    stage('Guardar') {
+      steps {
+        archiveArtifacts '*.txt'
+      }
+    }
+
   }
 }
